@@ -1,0 +1,1342 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>人体ys1000rt - 专业品牌,高清原创影像社区</title>
+<meta name="description" content="人体ys1000rt官方网站，专注人体结构与运动科学的高品质原创影像社区，为创作者与用户提供专业、高清、值得信赖的内容生态。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f172a'/%3E%3Ccircle cx='32' cy='20' r='9' fill='%2338bdf8'/%3E%3Crect x='20' y='32' width='24' height='22' rx='11' fill='%2322d3ee'/%3E%3C/svg%3E">
+<style>
+:root{
+--ys1000rt-bg:#0b1220;
+--ys1000rt-panel:#111c31;
+--ys1000rt-panel2:#16233c;
+--ys1000rt-line:rgba(120,170,255,.16);
+--ys1000rt-txt:#e8f0ff;
+--ys1000rt-dim:#9db0d0;
+--ys1000rt-cyan:#38bdf8;
+--ys1000rt-lime:#a3e635;
+--ys1000rt-violet:#8b7cff;
+--ys1000rt-radius:16px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:132px}
+body{
+font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;
+background:
+radial-gradient(900px 500px at 88% -8%,rgba(139,124,255,.18),transparent 60%),
+radial-gradient(800px 520px at 4% 12%,rgba(56,189,248,.14),transparent 62%),
+var(--ys1000rt-bg);
+color:var(--ys1000rt-txt);
+line-height:1.75;
+-webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+ul{list-style:none}
+.ys1000rt-wrap{width:min(1180px,92vw);margin:0 auto}
+.ys1000rt-sticky{position:sticky;top:0;z-index:60}
+
+/* 公告条 */
+.ys1000rt-notice{
+background:linear-gradient(90deg,rgba(56,189,248,.22),rgba(139,124,255,.22));
+border-bottom:1px solid var(--ys1000rt-line);
+font-size:13.5px;
+letter-spacing:.2px;
+}
+.ys1000rt-notice-in{display:flex;align-items:center;gap:12px;padding:9px 0;flex-wrap:wrap}
+.ys1000rt-notice-tag{
+flex:none;background:var(--ys1000rt-lime);color:#0b1220;font-weight:700;
+font-size:11.5px;padding:2px 9px;border-radius:999px;letter-spacing:.6px;
+}
+.ys1000rt-notice-in p{color:#d7e5ff;font-size:13.5px}
+.ys1000rt-notice-in a{margin-left:auto;color:var(--ys1000rt-cyan);font-weight:600;white-space:nowrap}
+.ys1000rt-notice-in a:hover{text-decoration:underline}
+
+/* 页头 */
+.ys1000rt-header{background:rgba(11,18,32,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--ys1000rt-line)}
+.ys1000rt-header-in{display:flex;align-items:center;gap:22px;padding:13px 0}
+.ys1000rt-logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;letter-spacing:.4px;white-space:nowrap}
+.ys1000rt-logo-mark{
+width:34px;height:34px;border-radius:10px;flex:none;
+background:conic-gradient(from 200deg,var(--ys1000rt-cyan),var(--ys1000rt-violet),var(--ys1000rt-lime),var(--ys1000rt-cyan));
+box-shadow:0 0 18px rgba(56,189,248,.45);
+}
+.ys1000rt-logo small{display:block;font-size:10.5px;font-weight:500;color:var(--ys1000rt-dim);letter-spacing:2px}
+.ys1000rt-nav{display:flex;gap:4px;flex:1;flex-wrap:wrap}
+.ys1000rt-nav a{
+font-size:14.5px;color:var(--ys1000rt-dim);padding:7px 12px;border-radius:9px;transition:.2s;
+}
+.ys1000rt-nav a:hover,.ys1000rt-nav a.is-active{color:#fff;background:rgba(56,189,248,.14)}
+.ys1000rt-search{position:relative;flex:none}
+.ys1000rt-search input{
+width:196px;background:var(--ys1000rt-panel2);border:1px solid var(--ys1000rt-line);
+color:var(--ys1000rt-txt);padding:9px 12px 9px 34px;border-radius:10px;font-size:13.5px;outline:none;transition:.25s;
+}
+.ys1000rt-search input:focus{width:236px;border-color:var(--ys1000rt-cyan);box-shadow:0 0 0 3px rgba(56,189,248,.14)}
+.ys1000rt-search::before{
+content:"";position:absolute;left:12px;top:50%;translate:0 -50%;
+width:11px;height:11px;border:2px solid var(--ys1000rt-dim);border-radius:50%;
+}
+.ys1000rt-search::after{
+content:"";position:absolute;left:21px;top:calc(50% + 5px);
+width:6px;height:2px;background:var(--ys1000rt-dim);rotate:45deg;border-radius:2px;
+}
+.ys1000rt-search-hint{
+display:none;position:absolute;top:calc(100% + 8px);right:0;width:288px;
+background:var(--ys1000rt-panel2);border:1px solid var(--ys1000rt-line);
+border-radius:12px;padding:10px;font-size:13px;color:var(--ys1000rt-dim);
+box-shadow:0 18px 40px rgba(0,0,0,.5);z-index:80;
+}
+.ys1000rt-search-hint.is-open{display:block}
+.ys1000rt-search-hint strong{color:var(--ys1000rt-cyan)}
+.ys1000rt-burger{display:none;width:40px;height:38px;border-radius:9px;border:1px solid var(--ys1000rt-line);font-size:17px;color:var(--ys1000rt-txt)}
+
+/* 首屏 */
+.ys1000rt-hero{padding:56px 0 18px}
+.ys1000rt-hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:38px;align-items:center}
+.ys1000rt-kicker{
+display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:1.4px;
+color:var(--ys1000rt-lime);border:1px solid rgba(163,230,53,.4);
+padding:5px 12px;border-radius:999px;margin-bottom:18px;
+}
+.ys1000rt-kicker i{width:7px;height:7px;border-radius:50%;background:var(--ys1000rt-lime);box-shadow:0 0 10px var(--ys1000rt-lime)}
+.ys1000rt-hero h1{font-size:clamp(34px,4.6vw,55px);line-height:1.14;letter-spacing:-1px;font-weight:800;margin-bottom:6px}
+.ys1000rt-hero h1 span{
+background:linear-gradient(96deg,var(--ys1000rt-cyan),var(--ys1000rt-violet) 62%,var(--ys1000rt-lime));
+-webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.ys1000rt-hero-sub{font-size:16px;color:#bccde8;margin:14px 0 20px;max-width:560px}
+.ys1000rt-hero-sub b{color:var(--ys1000rt-cyan);font-weight:600}
+.ys1000rt-hero-intro{font-size:14.5px;color:var(--ys1000rt-dim);max-width:580px;margin-bottom:24px}
+.ys1000rt-hero-intro p+p{margin-top:9px}
+.ys1000rt-stats{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px}
+.ys1000rt-stat{
+flex:1 1 120px;background:linear-gradient(160deg,var(--ys1000rt-panel2),rgba(17,28,49,.5));
+border:1px solid var(--ys1000rt-line);border-radius:13px;padding:13px 15px;
+}
+.ys1000rt-stat b{display:block;font-size:23px;letter-spacing:-.5px;color:var(--ys1000rt-cyan);font-weight:800}
+.ys1000rt-stat span{font-size:12px;color:var(--ys1000rt-dim);letter-spacing:.4px}
+.ys1000rt-cta{display:flex;gap:12px;flex-wrap:wrap}
+.ys1000rt-btn{
+display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:11px;
+font-size:14.5px;font-weight:600;transition:.22s;border:1px solid transparent;
+}
+.ys1000rt-btn-main{background:linear-gradient(120deg,var(--ys1000rt-cyan),var(--ys1000rt-violet));color:#06101f;box-shadow:0 10px 26px rgba(56,189,248,.3)}
+.ys1000rt-btn-main:hover{transform:translateY(-2px);box-shadow:0 14px 32px rgba(56,189,248,.42)}
+.ys1000rt-btn-ghost{border-color:var(--ys1000rt-line);color:#cfe0f8;background:rgba(22,35,60,.6)}
+.ys1000rt-btn-ghost:hover{border-color:var(--ys1000rt-cyan);color:#fff}
+
+.ys1000rt-hero-visual{position:relative}
+.ys1000rt-hero-visual figure{
+position:relative;border-radius:22px;overflow:hidden;border:1px solid var(--ys1000rt-line);
+box-shadow:0 30px 70px rgba(0,0,0,.55);
+}
+.ys1000rt-hero-visual img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.ys1000rt-hero-visual figcaption{
+position:absolute;left:0;right:0;bottom:0;padding:34px 18px 14px;
+background:linear-gradient(transparent,rgba(5,10,20,.92));
+font-size:13px;color:#dce8ff;display:flex;align-items:center;gap:8px;
+}
+.ys1000rt-play-dot{
+width:30px;height:30px;border-radius:50%;flex:none;display:grid;place-items:center;
+background:rgba(56,189,248,.9);color:#04101f;font-size:11px;
+}
+.ys1000rt-float-badge{
+position:absolute;right:-10px;top:-14px;background:var(--ys1000rt-panel2);
+border:1px solid var(--ys1000rt-line);border-radius:13px;padding:10px 14px;
+font-size:12px;color:var(--ys1000rt-dim);box-shadow:0 16px 34px rgba(0,0,0,.5);
+}
+.ys1000rt-float-badge b{display:block;color:var(--ys1000rt-lime);font-size:17px;line-height:1.2}
+
+/* 通用章节 */
+.ys1000rt-sec{padding:60px 0}
+.ys1000rt-sec-head{display:flex;align-items:flex-end;gap:18px;flex-wrap:wrap;margin-bottom:30px}
+.ys1000rt-sec-head h2{font-size:clamp(23px,2.7vw,31px);letter-spacing:-.5px;font-weight:800}
+.ys1000rt-sec-head h2 em{
+font-style:normal;color:var(--ys1000rt-cyan);
+}
+.ys1000rt-sec-head p{color:var(--ys1000rt-dim);font-size:14px;flex:1;min-width:200px}
+.ys1000rt-sec-head .ys1000rt-sec-more{
+font-size:13.5px;color:var(--ys1000rt-cyan);border:1px solid var(--ys1000rt-line);
+padding:7px 14px;border-radius:999px;
+}
+.ys1000rt-sec-head .ys1000rt-sec-more:hover{border-color:var(--ys1000rt-cyan)}
+
+/* 解析长文 */
+.ys1000rt-about{
+background:linear-gradient(170deg,rgba(22,35,60,.85),rgba(11,18,32,.7));
+border:1px solid var(--ys1000rt-line);border-radius:var(--ys1000rt-radius);
+padding:34px 32px;
+}
+.ys1000rt-about h2{font-size:26px;margin-bottom:16px;letter-spacing:-.4px}
+.ys1000rt-about h3{font-size:16.5px;margin:24px 0 9px;color:var(--ys1000rt-lime);letter-spacing:.2px}
+.ys1000rt-about p{font-size:14.5px;color:#c4d4ec;margin-bottom:11px;text-align:justify}
+.ys1000rt-about strong{color:var(--ys1000rt-cyan);font-weight:600}
+.ys1000rt-about-cols{display:grid;grid-template-columns:1fr 1fr;gap:0 34px}
+
+/* 焦点视频 */
+.ys1000rt-focus-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:20px}
+.ys1000rt-vcard{
+background:var(--ys1000rt-panel);border:1px solid var(--ys1000rt-line);
+border-radius:var(--ys1000rt-radius);overflow:hidden;transition:.26s;
+display:flex;flex-direction:column;
+}
+.ys1000rt-vcard:hover{transform:translateY(-4px);border-color:rgba(56,189,248,.5);box-shadow:0 22px 46px rgba(0,0,0,.45)}
+.ys1000rt-vcard-cover{position:relative;overflow:hidden;background:#0d1728}
+.ys1000rt-vcard-cover img{width:100%;aspect-ratio:16/9;object-fit:cover;transition:.4s}
+.ys1000rt-vcard:hover .ys1000rt-vcard-cover img{scale:1.05}
+.ys1000rt-vtag{
+position:absolute;left:11px;top:11px;font-size:11.5px;font-weight:700;
+background:rgba(11,18,32,.82);border:1px solid var(--ys1000rt-line);
+color:var(--ys1000rt-lime);padding:3px 9px;border-radius:999px;backdrop-filter:blur(6px);
+}
+.ys1000rt-vdur{
+position:absolute;right:11px;bottom:11px;font-size:11.5px;background:rgba(0,0,0,.68);
+padding:2px 8px;border-radius:6px;color:#dfe9fb;
+}
+.ys1000rt-vplay{
+position:absolute;left:50%;top:50%;translate:-50% -50%;
+width:50px;height:50px;border-radius:50%;display:grid;place-items:center;
+background:rgba(56,189,248,.9);color:#04101f;font-size:15px;
+box-shadow:0 0 0 8px rgba(56,189,248,.16);transition:.26s;
+}
+.ys1000rt-vcard:hover .ys1000rt-vplay{background:var(--ys1000rt-lime);scale:1.06}
+.ys1000rt-vcard-body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.ys1000rt-vcard-body h3{font-size:16.5px;letter-spacing:-.2px;line-height:1.45}
+.ys1000rt-vcard-body p{font-size:13px;color:var(--ys1000rt-dim);flex:1}
+.ys1000rt-vmeta{display:flex;align-items:center;gap:9px;font-size:12.5px;color:var(--ys1000rt-dim);flex-wrap:wrap}
+.ys1000rt-ava{
+width:24px;height:24px;border-radius:50%;flex:none;display:grid;place-items:center;
+font-size:11.5px;font-weight:700;color:#06101f;
+}
+.ys1000rt-ava.a1{background:linear-gradient(135deg,#38bdf8,#8b7cff)}
+.ys1000rt-ava.a2{background:linear-gradient(135deg,#a3e635,#22d3ee)}
+.ys1000rt-ava.a3{background:linear-gradient(135deg,#f9a8d4,#8b7cff)}
+.ys1000rt-ava.a4{background:linear-gradient(135deg,#fbbf24,#f97316)}
+.ys1000rt-ava.a5{background:linear-gradient(135deg,#34d399,#38bdf8)}
+.ys1000rt-ava.a6{background:linear-gradient(135deg,#c084fc,#f472b6)}
+.ys1000rt-vactions{display:flex;gap:14px;font-size:12.5px;color:var(--ys1000rt-dim);border-top:1px solid var(--ys1000rt-line);padding-top:10px}
+.ys1000rt-vactions button{display:inline-flex;align-items:center;gap:4px;transition:.2s;font-size:12.5px}
+.ys1000rt-vactions button:hover{color:var(--ys1000rt-cyan)}
+.ys1000rt-vactions button.is-like{color:var(--ys1000rt-lime);font-weight:700}
+.ys1000rt-vactions button.is-fav{color:#f472b6;font-weight:700}
+.ys1000rt-mini-col{display:flex;flex-direction:column;gap:14px}
+.ys1000rt-mini{
+display:grid;grid-template-columns:112px 1fr;gap:12px;align-items:center;
+background:var(--ys1000rt-panel);border:1px solid var(--ys1000rt-line);
+border-radius:13px;padding:9px;transition:.22s;cursor:pointer;
+}
+.ys1000rt-mini:hover{border-color:rgba(139,124,255,.55);transform:translateX(3px)}
+.ys1000rt-mini img{width:112px;aspect-ratio:16/10;object-fit:cover;border-radius:9px}
+.ys1000rt-mini h4{font-size:14px;line-height:1.45;margin-bottom:5px}
+.ys1000rt-mini span{font-size:11.5px;color:var(--ys1000rt-dim)}
+
+/* 视频流 */
+.ys1000rt-filter{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:22px}
+.ys1000rt-chip{
+font-size:13px;padding:6px 15px;border-radius:999px;color:var(--ys1000rt-dim);
+border:1px solid var(--ys1000rt-line);transition:.2s;background:rgba(22,35,60,.4);
+}
+.ys1000rt-chip:hover{color:#fff}
+.ys1000rt-chip.is-on{background:linear-gradient(120deg,rgba(56,189,248,.25),rgba(139,124,255,.25));color:#fff;border-color:rgba(56,189,248,.55)}
+.ys1000rt-flow{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.ys1000rt-flow .ys1000rt-vcard.is-hide{display:none}
+.ys1000rt-empty{display:none;color:var(--ys1000rt-dim);font-size:14px;padding:16px 0}
+.ys1000rt-empty.is-on{display:block}
+
+/* 专题 */
+.ys1000rt-topic-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.ys1000rt-topic{
+position:relative;border-radius:var(--ys1000rt-radius);overflow:hidden;
+border:1px solid var(--ys1000rt-line);min-height:250px;display:flex;align-items:flex-end;
+transition:.26s;
+}
+.ys1000rt-topic:hover{transform:translateY(-4px);border-color:rgba(163,230,53,.55)}
+.ys1000rt-topic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ys1000rt-topic-in{
+position:relative;padding:18px;background:linear-gradient(transparent,rgba(4,9,18,.94) 62%);
+width:100%;
+}
+.ys1000rt-topic-in span{font-size:11.5px;color:var(--ys1000rt-lime);letter-spacing:1px}
+.ys1000rt-topic-in h3{font-size:16px;margin:5px 0 6px;line-height:1.4}
+.ys1000rt-topic-in p{font-size:12.5px;color:#b6c7e2;line-height:1.55}
+
+/* 创作者 */
+.ys1000rt-creators{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.ys1000rt-creator{
+background:linear-gradient(165deg,var(--ys1000rt-panel2),rgba(17,28,49,.55));
+border:1px solid var(--ys1000rt-line);border-radius:var(--ys1000rt-radius);
+padding:20px;transition:.24s;
+}
+.ys1000rt-creator:hover{border-color:rgba(56,189,248,.5);transform:translateY(-3px)}
+.ys1000rt-creator-top{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.ys1000rt-creator-ava{
+width:46px;height:46px;border-radius:14px;flex:none;display:grid;place-items:center;
+font-weight:800;font-size:17px;color:#06101f;
+}
+.ys1000rt-creator-top h3{font-size:15.5px}
+.ys1000rt-creator-top span{font-size:12px;color:var(--ys1000rt-dim)}
+.ys1000rt-creator p{font-size:13px;color:#b9c9e3;margin-bottom:13px}
+.ys1000rt-creator-foot{display:flex;gap:16px;font-size:12.5px;color:var(--ys1000rt-dim);border-top:1px solid var(--ys1000rt-line);padding-top:11px}
+.ys1000rt-creator-foot b{color:var(--ys1000rt-cyan);font-weight:700}
+.ys1000rt-creator-btn{
+margin-top:12px;width:100%;padding:9px;border-radius:9px;font-size:13px;
+border:1px solid var(--ys1000rt-line);color:#cfe0f8;transition:.2s;
+}
+.ys1000rt-creator-btn:hover{background:rgba(56,189,248,.14);border-color:var(--ys1000rt-cyan);color:#fff}
+
+/* 故事随笔 */
+.ys1000rt-stories{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.ys1000rt-story{
+background:var(--ys1000rt-panel);border:1px solid var(--ys1000rt-line);
+border-radius:var(--ys1000rt-radius);padding:22px;position:relative;transition:.22s;
+}
+.ys1000rt-story:hover{border-color:rgba(139,124,255,.5)}
+.ys1000rt-story::before{
+content:"“";position:absolute;right:18px;top:2px;font-size:52px;color:rgba(139,124,255,.22);line-height:1;
+}
+.ys1000rt-story h3{font-size:15.5px;margin-bottom:9px;line-height:1.5}
+.ys1000rt-story p{font-size:13px;color:#b9c9e3;line-height:1.7}
+.ys1000rt-story span{display:block;margin-top:12px;font-size:12px;color:var(--ys1000rt-dim)}
+
+/* 评价 */
+.ys1000rt-comments{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.ys1000rt-comment{
+background:rgba(22,35,60,.5);border:1px solid var(--ys1000rt-line);
+border-radius:14px;padding:16px 18px;
+}
+.ys1000rt-comment-top{display:flex;align-items:center;gap:10px;margin-bottom:9px}
+.ys1000rt-comment-top b{font-size:13.5px}
+.ys1000rt-comment-top span{font-size:11.5px;color:var(--ys1000rt-dim);margin-left:auto}
+.ys1000rt-comment p{font-size:13px;color:#c3d3ec;line-height:1.7}
+
+/* 动态日志 */
+.ys1000rt-log{display:flex;flex-direction:column;gap:2px;border-left:2px solid var(--ys1000rt-line);padding-left:22px}
+.ys1000rt-log-item{position:relative;padding:0 0 24px}
+.ys1000rt-log-item::before{
+content:"";position:absolute;left:-29px;top:6px;width:12px;height:12px;border-radius:50%;
+background:var(--ys1000rt-cyan);box-shadow:0 0 0 4px rgba(56,189,248,.16);
+}
+.ys1000rt-log-item span{font-size:12px;color:var(--ys1000rt-lime);letter-spacing:.6px}
+.ys1000rt-log-item h3{font-size:15px;margin:3px 0 5px}
+.ys1000rt-log-item p{font-size:13px;color:var(--ys1000rt-dim)}
+
+/* FAQ */
+.ys1000rt-faq{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.ys1000rt-faq details{
+background:var(--ys1000rt-panel);border:1px solid var(--ys1000rt-line);
+border-radius:12px;padding:14px 17px;transition:.2s;
+}
+.ys1000rt-faq details[open]{border-color:rgba(56,189,248,.5)}
+.ys1000rt-faq summary{
+font-size:14px;font-weight:600;cursor:pointer;list-style:none;
+display:flex;justify-content:space-between;gap:10px;
+}
+.ys1000rt-faq summary::-webkit-details-marker{display:none}
+.ys1000rt-faq summary::after{content:"+";color:var(--ys1000rt-cyan);font-weight:700}
+.ys1000rt-faq details[open] summary::after{content:"−"}
+.ys1000rt-faq details p{font-size:13px;color:var(--ys1000rt-dim);margin-top:10px;line-height:1.7}
+
+/* 联系 */
+.ys1000rt-contact{
+display:grid;grid-template-columns:1.1fr .9fr;gap:26px;
+background:linear-gradient(150deg,rgba(56,189,248,.12),rgba(139,124,255,.12));
+border:1px solid var(--ys1000rt-line);border-radius:20px;padding:34px;
+}
+.ys1000rt-contact h2{font-size:25px;margin-bottom:12px}
+.ys1000rt-contact p{font-size:14px;color:#bfd0e9;margin-bottom:16px}
+.ys1000rt-contact-info{display:flex;flex-direction:column;gap:9px;font-size:13.5px;color:#c8d8ef}
+.ys1000rt-contact-info b{color:var(--ys1000rt-cyan);font-weight:600}
+.ys1000rt-contact-form{display:flex;flex-direction:column;gap:11px}
+.ys1000rt-contact-form input,.ys1000rt-contact-form textarea{
+background:rgba(11,18,32,.7);border:1px solid var(--ys1000rt-line);color:var(--ys1000rt-txt);
+border-radius:10px;padding:11px 13px;font-size:13.5px;font-family:inherit;outline:none;resize:vertical;
+}
+.ys1000rt-contact-form input:focus,.ys1000rt-contact-form textarea:focus{border-color:var(--ys1000rt-cyan)}
+
+/* 页脚 */
+.ys1000rt-footer{border-top:1px solid var(--ys1000rt-line);margin-top:30px;padding:42px 0 26px;background:rgba(8,14,26,.65)}
+.ys1000rt-footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:26px;margin-bottom:30px}
+.ys1000rt-footer h4{font-size:13.5px;color:#fff;margin-bottom:12px;letter-spacing:.5px}
+.ys1000rt-footer ul{display:flex;flex-direction:column;gap:8px}
+.ys1000rt-footer ul a,.ys1000rt-footer ul li{font-size:13px;color:var(--ys1000rt-dim);transition:.2s}
+.ys1000rt-footer ul a:hover{color:var(--ys1000rt-cyan)}
+.ys1000rt-footer-brand p{font-size:13px;color:var(--ys1000rt-dim);margin-top:12px;line-height:1.8;max-width:280px}
+.ys1000rt-footer-bottom{
+border-top:1px solid var(--ys1000rt-line);padding-top:18px;
+display:flex;gap:14px;flex-wrap:wrap;justify-content:space-between;
+font-size:12.5px;color:#7f93b4;
+}
+
+/* 弹层 */
+.ys1000rt-modal{
+display:none;position:fixed;inset:0;z-index:120;background:rgba(3,7,15,.72);
+backdrop-filter:blur(4px);padding:20px;
+}
+.ys1000rt-modal.is-open{display:grid;place-items:center}
+.ys1000rt-modal-box{
+background:var(--ys1000rt-panel2);border:1px solid var(--ys1000rt-line);
+border-radius:18px;padding:26px;width:min(460px,94vw);
+box-shadow:0 30px 80px rgba(0,0,0,.7);
+}
+.ys1000rt-modal-box h3{font-size:18px;margin-bottom:12px}
+.ys1000rt-modal-box p{font-size:13.5px;color:var(--ys1000rt-dim);margin-bottom:16px}
+.ys1000rt-modal-box .ys1000rt-btn{width:100%;justify-content:center}
+.ys1000rt-modal-close{float:right;font-size:20px;line-height:1;color:var(--ys1000rt-dim)}
+
+/* Toast */
+.ys1000rt-toast{
+position:fixed;left:50%;bottom:34px;translate:-50% 20px;z-index:200;
+background:var(--ys1000rt-lime);color:#06101f;font-weight:700;font-size:13.5px;
+padding:11px 22px;border-radius:999px;opacity:0;pointer-events:none;transition:.28s;
+box-shadow:0 16px 40px rgba(0,0,0,.5);
+}
+.ys1000rt-toast.is-on{opacity:1;translate:-50% 0}
+
+/* 回顶 */
+.ys1000rt-top{
+position:fixed;right:22px;bottom:26px;z-index:90;width:44px;height:44px;border-radius:12px;
+background:var(--ys1000rt-panel2);border:1px solid var(--ys1000rt-line);
+color:var(--ys1000rt-cyan);font-size:16px;display:grid;place-items:center;
+opacity:0;pointer-events:none;transition:.28s;
+}
+.ys1000rt-top.is-on{opacity:1;pointer-events:auto}
+.ys1000rt-top:hover{border-color:var(--ys1000rt-cyan)}
+
+/* 响应式 */
+@media(max-width:1000px){
+.ys1000rt-hero-grid{grid-template-columns:1fr;gap:28px}
+.ys1000rt-focus-grid{grid-template-columns:1fr}
+.ys1000rt-flow{grid-template-columns:repeat(2,1fr)}
+.ys1000rt-topic-grid{grid-template-columns:repeat(2,1fr)}
+.ys1000rt-creators,.ys1000rt-stories{grid-template-columns:repeat(2,1fr)}
+.ys1000rt-about-cols{grid-template-columns:1fr}
+.ys1000rt-contact{grid-template-columns:1fr}
+.ys1000rt-footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:760px){
+.ys1000rt-burger{display:block}
+.ys1000rt-nav{
+display:none;order:4;flex-basis:100%;flex-direction:column;
+background:var(--ys1000rt-panel2);border:1px solid var(--ys1000rt-line);
+border-radius:12px;padding:8px;margin-top:6px;
+}
+.ys1000rt-nav.is-open{display:flex}
+.ys1000rt-nav a{padding:10px 12px}
+.ys1000rt-header-in{gap:12px}
+.ys1000rt-search{flex:1}
+.ys1000rt-search input{width:100%}
+.ys1000rt-search input:focus{width:100%}
+.ys1000rt-search-hint{width:100%;right:0;left:0}
+.ys1000rt-flow,.ys1000rt-topic-grid,.ys1000rt-creators,.ys1000rt-stories,.ys1000rt-comments,.ys1000rt-faq{grid-template-columns:1fr}
+.ys1000rt-hero{padding:36px 0 10px}
+.ys1000rt-sec{padding:44px 0}
+.ys1000rt-about{padding:24px 20px}
+.ys1000rt-contact{padding:24px 20px}
+.ys1000rt-footer-grid{grid-template-columns:1fr}
+.ys1000rt-float-badge{right:6px;top:-10px}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="ys1000rt-sticky">
+  <div class="ys1000rt-notice">
+    <div class="ys1000rt-wrap ys1000rt-notice-in">
+      <span class="ys1000rt-notice-tag">官方发布</span>
+      <p>人体ys1000rt 影像实验室第 12 期上线：《静息与发力》运动解剖专题新增 6 支高清短片。</p>
+      <a href="#ys1000rt-focus">查看更新 →</a>
+    </div>
+  </div>
+  <header class="ys1000rt-header">
+    <div class="ys1000rt-wrap ys1000rt-header-in">
+      <a class="ys1000rt-logo" href="#ys1000rt-hero">
+        <span class="ys1000rt-logo-mark"></span>
+        <span>人体ys1000rt<small>BODY · MOTION</small></span>
+      </a>
+      <nav class="ys1000rt-nav" id="ys1000rtNav">
+        <a href="#ys1000rt-hero" class="is-active">首页</a>
+        <a href="#ys1000rt-focus">焦点影像</a>
+        <a href="#ys1000rt-flow">内容流</a>
+        <a href="#ys1000rt-topics">专题企划</a>
+        <a href="#ys1000rt-creators">创作者</a>
+        <a href="#ys1000rt-news">企业动态</a>
+        <a href="#ys1000rt-faq">帮助</a>
+        <a href="#ys1000rt-contact">联系</a>
+      </nav>
+      <div class="ys1000rt-search">
+        <input type="search" id="ys1000rtSearch" placeholder="搜索结构、动作、肌群…" autocomplete="off" aria-label="站内搜索">
+        <div class="ys1000rt-search-hint" id="ys1000rtSearchHint"></div>
+      </div>
+      <button class="ys1000rt-burger" id="ys1000rtBurger" aria-label="展开导航" aria-expanded="false">☰</button>
+    </div>
+  </header>
+</div>
+
+<main>
+
+<!-- 首屏 -->
+<section class="ys1000rt-hero" id="ys1000rt-hero">
+  <div class="ys1000rt-wrap ys1000rt-hero-grid">
+    <div>
+      <span class="ys1000rt-kicker"><i></i>人体ys1000rt 官方网站 · 企业级影像平台</span>
+      <h1>人体<span>ys1000rt</span></h1>
+      <p class="ys1000rt-hero-sub">以<b>专业影像</b>记录身体的真实结构，用<b>原创内容</b>解释运动中的每一次发力。</p>
+      <div class="ys1000rt-hero-intro">
+        <p>人体ys1000rt 是一个专注人体结构与运动表现的视频品牌，深耕运动解剖、体态重建与训练表达等垂直领域，为教练、康复师、创作者与普通用户搭建高品质内容生态。</p>
+        <p>我们相信身体是最好的老师，平台以高清原创影像、可复现的动作拆解与长期跟拍记录，帮助每一位用户读懂自己的身体，在真实与温暖中获得持续的成长力量。</p>
+      </div>
+      <div class="ys1000rt-stats">
+        <div class="ys1000rt-stat"><b data-count="1286">0</b><span>原创影像条目</span></div>
+        <div class="ys1000rt-stat"><b data-count="364">0</b><span>签约创作者</span></div>
+        <div class="ys1000rt-stat"><b data-count="52">0</b><span>月度活跃万人</span></div>
+      </div>
+      <div class="ys1000rt-cta">
+        <a class="ys1000rt-btn ys1000rt-btn-main" href="#ys1000rt-flow">进入内容流 ▶</a>
+        <a class="ys1000rt-btn ys1000rt-btn-ghost" href="#ys1000rt-about">了解品牌故事</a>
+        <button class="ys1000rt-btn ys1000rt-btn-ghost" data-ys1000rt-submit>投稿入口</button>
+      </div>
+    </div>
+    <div class="ys1000rt-hero-visual">
+      <figure>
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23102039'/%3E%3Cstop offset='1' stop-color='%230b1220'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='500' fill='url(%23g1)'/%3E%3Ccircle cx='400' cy='195' r='52' fill='none' stroke='%2338bdf8' stroke-width='4'/%3E%3Cpath d='M400 247 L400 352' stroke='%238b7cff' stroke-width='9' stroke-linecap='round'/%3E%3Cpath d='M400 272 L318 318 M400 272 L482 318' stroke='%2338bdf8' stroke-width='7' stroke-linecap='round'/%3E%3Cpath d='M400 352 L342 442 M400 352 L458 442' stroke='%23a3e635' stroke-width='7' stroke-linecap='round'/%3E%3Cpath d='M400 195 m-92 0 a92 92 0 1 1 184 0' fill='none' stroke='%2322d3ee' stroke-width='2' stroke-dasharray='5 8' opacity='.7'/%3E%3Ccircle cx='400' cy='195' r='4' fill='%23a3e635'/%3E%3Ctext x='60' y='64' fill='%2338bdf8' font-size='22' font-family='sans-serif' letter-spacing='5'%3EBODY MAP%3C/text%3E%3Ctext x='60' y='96' fill='%236f83a6' font-size='14' font-family='sans-serif'%3ESTRUCTURE %C2%B7 MOTION %C2%B7 RECORD%3C/text%3E%3C/svg%3E" alt="人体ys1000rt品牌主视觉：蓝紫光线下的人体结构运动线稿">
+        <figcaption><span class="ys1000rt-play-dot">▶</span>品牌形象短片《身体的逻辑 · 第一帧》 02:46</figcaption>
+      </figure>
+      <div class="ys1000rt-float-badge"><b>12 期</b>影像实验室已上线</div>
+    </div>
+  </div>
+</section>
+
+<!-- 品牌解析长文 -->
+<section class="ys1000rt-sec" id="ys1000rt-about">
+  <div class="ys1000rt-wrap">
+    <div class="ys1000rt-about">
+      <h2>人体ys1000rt 品牌解析：把身体讲清楚，需要一套专业的影像语言</h2>
+      <div class="ys1000rt-about-cols">
+        <div>
+          <p>人体ys1000rt 诞生于一个朴素的困惑：关于身体的课程与视频已经足够多，但真正能把一次动作讲清楚、把一块肌肉的运动轨迹呈现出来的内容依然稀缺。作为深耕人体结构与运动表现领域的专业品牌，我们把"看得懂"作为内容生产的第一标准，用<strong>官方网站</strong>级的制作规格，重塑身体知识类影像的观看体验。</p>
+          <h3>一、定位：垂直领域里的一套影像标准</h3>
+          <p>平台围绕"结构—动作—反馈"三段式框架组织内容。结构部分以解剖线稿、分层渲染与体表标记为主，力求把深层的肌群关系可视化；动作部分以多机位、慢速回放与轨迹叠加为主，让发力顺序可以被逐帧观察；反馈部分则记录真实练习者的呼吸、代偿与改善过程，保留不完美的细节，因为<strong>真实</strong>才是可被信任的基础。</p>
+          <p>在行业里，人体ys1000rt 并不是一个追求流量的品牌。我们更愿意把自己定义为一个持续运营的内容生态：每一支短片都经过动作示范者的双人复核，每一份动作要点都附带可复现的角度与节奏参数，观众看完后可以带着这些参数走进训练场，而不是只留下"感觉很燃"的情绪残留。</p>
+          <h3>二、方法论：为什么是影像，而不是图文</h3>
+          <p>身体的运动是四维的——它有先后，有快慢，有在空间中的轨迹。静态图文能说明位置，却很难表达时间。人体ys1000rt 选择视频作为主要载体，正是为了把时间这一维度呈现出来：起跳前小腿的预收缩、深蹲底部髋膝踝的联动顺序、跑动中落脚点与重心的相互关系，这些在影像里都有明确的视觉证据。</p>
+          <p>为了提升辨析精度，我们的制作团队会在剪辑时保持原速段落与慢放段落并存，避免观众被过度慢放误导；同时标注镜头角度与拍摄帧率，让内容具备可被专业用户检验的<strong>品质</strong>。这也是平台在教练与康复师群体中积累口碑的原因。</p>
+        </div>
+        <div>
+          <h3>三、内容生态：创作者、用户与品牌的三向循环</h3>
+          <p>人体ys1000rt 的<strong>创作者</strong>矩阵由三类人构成：运动科学背景的研究者、一线教学十年以上的教练、以及用身体讲述故事的普通练习者。三类视角互为补充，前者提供理论支撑，中者提供实践细节，后者提供温度与真实的共鸣。平台为每位创作者提供统一的拍摄规范与素材库，确保不同作者的作品在视觉语言上保持一致性，又保留各自的表达个性。</p>
+          <p>用户在平台上的角色也不止于观看。动作挑战、体态自测报名、训练日志投稿等机制，让用户从内容的接受者变成内容的一部分。我们相信一个健康的<strong>内容生态</strong>，应当是用户能够看见自己出现在屏幕里的地方。</p>
+          <h3>四、品质与责任：身体内容需要更谨慎的边界</h3>
+          <p>身体类内容天然带有风险属性。人体ys1000rt 在选题阶段即设置安全审核：涉及高负荷动作的短片，会在片头标注适用人群与风险提示；涉及康复训练的内容，会明确说明不能替代专业诊断。我们并不认为这种谨慎会削弱内容的<strong>影响力</strong>，恰恰相反，它是品牌能够被长期<strong>值得信赖</strong>的前提。</p>
+          <p>同时，平台在素材使用、肖像授权与配乐版权上建立了完整流程，所有出镜者均签署影像授权，所有配乐均采用正版授权曲库。作为一家注重社会责任的<strong>企业</strong>，我们希望通过自身实践，推动身体类内容行业形成更清晰的制作伦理。</p>
+          <h3>五、未来：让更多人读懂自己的身体</h3>
+          <p>面向未来，人体ys1000rt 将持续扩展影像实验室、动作数据库与体态档案三条产品线，探索多角度同步拍摄、动作轨迹可视化与个性化训练反馈等方向。我们希望这个<strong>品牌</strong>最终成为一个可以被反复查阅的身体影像档案库，而不是一个只在推送里闪现的账号。</p>
+          <p>如果你也在用镜头记录身体，欢迎通过官方网站的投稿入口加入我们。无论你是研究者、教练，还是刚刚开始练习的普通人，这里都有一块属于你的位置。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 焦点影像 -->
+<section class="ys1000rt-sec" id="ys1000rt-focus">
+  <div class="ys1000rt-wrap">
+    <div class="ys1000rt-sec-head">
+      <h2>焦点影像 <em>/ Focus</em></h2>
+      <p>人体ys1000rt 编辑部本周重点推荐，聚焦结构可视与动作细节。</p>
+      <a class="ys1000rt-sec-more" href="#ys1000rt-flow">全部内容</a>
+    </div>
+    <div class="ys1000rt-focus-grid">
+      <article class="ys1000rt-vcard">
+        <div class="ys1000rt-vcard-cover">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='f1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230e1b33'/%3E%3Cstop offset='1' stop-color='%23142a45'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23f1)'/%3E%3Cg stroke='%2338bdf8' stroke-width='2' opacity='.55'%3E%3Cpath d='M0 90 H800 M0 180 H800 M0 270 H800 M0 360 H800'/%3E%3Cpath d='M100 0 V450 M200 0 V450 M300 0 V450 M400 0 V450 M500 0 V450 M600 0 V450 M700 0 V450'/%3E%3C/g%3E%3Cpath d='M400 110 L400 250 M400 170 L330 210 M400 170 L470 210 M400 250 L355 350 M400 250 L445 350' stroke='%23a3e635' stroke-width='6' stroke-linecap='round' fill='none'/%3E%3Ccircle cx='400' cy='92' r='24' fill='none' stroke='%238b7cff' stroke-width='4'/%3E%3Cpath d='M400 250 m0 0 l60 34' stroke='%23f472b6' stroke-width='3' stroke-dasharray='6 6'/%3E%3Ctext x='40' y='52' fill='%23a3e635' font-size='15' font-family='sans-serif' letter-spacing='3'%3EDEEP SQUAT ANALYSIS%3C/text%3E%3C/svg%3E" alt="深蹲底部髋膝踝联动解析短片封面，绿色骨架线与蓝色网格底图">
+          <span class="ys1000rt-vtag">深度测评</span>
+          <span class="ys1000rt-vdur">18:32</span>
+          <span class="ys1000rt-vplay">▶</span>
+        </div>
+        <div class="ys1000rt-vcard-body">
+          <h3>深蹲底部：髋膝踝的联动顺序与重心落点逐帧对照</h3>
+          <p>用三机位同步拍摄还原一次完整深蹲，逐帧标注踝背屈角度、膝前移幅度与髋铰链启动时机，附可复现参数表。</p>
+          <div class="ys1000rt-vmeta">
+            <span class="ys1000rt-ava a1">林</span>
+            <span>林述白 · 运动解剖研究者</span>
+            <span>· 2026-11-14</span>
+          </div>
+          <div class="ys1000rt-vactions">
+            <button data-ys1000rt-like>♡ 1.2万</button>
+            <button data-ys1000rt-fav>☆ 收藏</button>
+            <button data-ys1000rt-comment>💬 386</button>
+            <button data-ys1000rt-share>分享</button>
+          </div>
+        </div>
+      </article>
+      <div class="ys1000rt-mini-col">
+        <article class="ys1000rt-mini" data-ys1000rt-openvideo="肩胛骨在推举中的上回旋">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Cdefs%3E%3ClinearGradient id='m1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231b2440'/%3E%3Cstop offset='1' stop-color='%230d1526'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='320' height='200' fill='url(%23m1)'/%3E%3Cpath d='M160 92 m-46 0 a46 46 0 0 1 92 0' fill='none' stroke='%23f472b6' stroke-width='3'/%3E%3Cpath d='M114 92 a46 46 0 0 0 92 0' fill='none' stroke='%2338bdf8' stroke-width='3'/%3E%3Cpath d='M114 92 L160 62 L206 92' fill='none' stroke='%23a3e635' stroke-width='2' stroke-dasharray='4 5'/%3E%3Ctext x='140' y='165' fill='%239db0d0' font-size='12' font-family='sans-serif'%3EUPPER ROTATION%3C/text%3E%3C/svg%3E" alt="肩胛骨上回旋力学短片封面，粉色与青色弧形轨迹">
+          <div>
+            <h4>肩胛骨在推举中如何完成上回旋</h4>
+            <span>经验分享 · 09:14</span>
+          </div>
+        </article>
+        <article class="ys1000rt-mini" data-ys1000rt-openvideo="久坐年人群的胸椎旋前">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Cdefs%3E%3ClinearGradient id='m2' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23212a1a'/%3E%3Cstop offset='1' stop-color='%230d1526'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='320' height='200' fill='url(%23m2)'/%3E%3Cg stroke='%23a3e635' stroke-width='4' stroke-linecap='round'%3E%3Cpath d='M120 60 q40 26 0 52 q-40 26 0 52'/%3E%3Cpath d='M200 60 q-40 26 0 52 q40 26 0 52'/%3E%3C/g%3E%3Ccircle cx='160' cy='112' r='8' fill='%2338bdf8'/%3E%3Ctext x='104' y='185' fill='%239db0d0' font-size='12' font-family='sans-serif'%3ETHORACIC ROTATION%3C/text%3E%3C/svg%3E" alt="胸椎旋转训练短片封面，绿色脊柱曲线与蓝色标记点">
+          <div>
+            <h4>久坐人群的胸椎旋前：一套桌面级练习</h4>
+            <span>教程干货 · 12:06</span>
+          </div>
+        </article>
+        <article class="ys1000rt-mini" data-ys1000rt-openvideo="跑者足弓的落地反馈">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Cdefs%3E%3ClinearGradient id='m3' x1='0' y1='0' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%2318263f'/%3E%3Cstop offset='1' stop-color='%23131f36'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='320' height='200' fill='url(%23m3)'/%3E%3Cpath d='M96 150 q40 -66 118 -30 q18 10 -12 30 z' fill='none' stroke='%2338bdf8' stroke-width='4'/%3E%3Cpath d='M150 150 q14 -34 44 -18' fill='none' stroke='%23fbbf24' stroke-width='3' stroke-dasharray='5 5'/%3E%3Ccircle cx='206' cy='142' r='5' fill='%23f472b6'/%3E%3Ctext x='96' y='182' fill='%239db0d0' font-size='12' font-family='sans-serif'%3EARCH SUPPORT%3C/text%3E%3C/svg%3E" alt="跑者足弓支撑短片封面，蓝色足弓线与橙色压力虚线">
+          <div>
+            <h4>跑者足弓的落地反馈与缓冲策略</h4>
+            <span>健康运动 · 07:48</span>
+          </div>
+        </article>
+        <article class="ys1000rt-mini" data-ys1000rt-openvideo="修复期的呼吸重建">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Cdefs%3E%3ClinearGradient id='m4' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23261c3a'/%3E%3Cstop offset='1' stop-color='%230d1526'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='320' height='200' fill='url(%23m4)'/%3E%3Cg fill='none' stroke='%238b7cff' stroke-width='2'%3E%3Ccircle cx='160' cy='105' r='20'/%3E%3Ccircle cx='160' cy='105' r='36' opacity='.7'/%3E%3Ccircle cx='160' cy='105' r='52' opacity='.45'/%3E%3Ccircle cx='160' cy='105' r='68' opacity='.25'/%3E%3C/g%3E%3Ctext x='118' y='182' fill='%239db0d0' font-size='12' font-family='sans-serif'%3EBREATH REBUILD%3C/text%3E%3C/svg%3E" alt="呼吸重建短片封面，紫色同心圆呼吸波纹">
+          <div>
+            <h4>修复期的呼吸重建：从肋骨到筋膜的节律</h4>
+            <span>人物访谈 · 15:20</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 内容流 -->
+<section class="ys1000rt-sec" id="ys1000rt-flow">
+  <div class="ys1000rt-wrap">
+    <div class="ys1000rt-sec-head">
+      <h2>内容流 <em>/ Feed</em></h2>
+      <p>按主题筛选，查看人体ys1000rt 平台上的高清原创短片。</p>
+    </div>
+    <div class="ys1000rt-filter" id="ys1000rtFilter">
+      <button class="ys1000rt-chip is-on" data-ys1000rt-cat="all">全部</button>
+      <button class="ys1000rt-chip" data-ys1000rt-cat="结构">结构解析</button>
+      <button class="ys1000rt-chip" data-ys1000rt-cat="训练">动作训练</button>
+      <button class="ys1000rt-chip" data-ys1000rt-cat="康复">康复修复</button>
+      <button class="ys1000rt-chip" data-ys1000rt-cat="故事">人物故事</button>
+    </div>
+    <div class="ys1000rt-flow" id="ys1000rtFlow">
+      <article class="ys1000rt-vcard" data-ys1000rt-cat="结构">
+        <div class="ys1000rt-vcard-cover">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%230d1728'/%3E%3Cg stroke='%2338bdf8' stroke-width='1.5' opacity='.4'%3E%3Cpath d='M60 0 V270 M120 0 V270 M180 0 V270 M240 0 V270 M300 0 V270 M360 0 V270 M420 0 V270'/%3E%3C/g%3E%3Ccircle cx='240' cy='88' r='26' fill='none' stroke='%238b7cff' stroke-width='4'/%3E%3Cpath d='M240 114 V186 M240 132 L192 162 M240 132 L288 162 M240 186 L208 240 M240 186 L272 240' stroke='%23a3e635' stroke-width='5' stroke-linecap='round'/%3E%3Ctext x='60' y='248' fill='%236f83a6' font-size='12' font-family='sans-serif'%3ESAGITTAL PLANE%3C/text%3E%3C/svg%3E" alt="身体矢状面结构解析封面，蓝色网格与绿色骨架">
+          <span class="ys1000rt-vtag">结构解析</span>
+          <span class="ys1000rt-vdur">11:04</span>
+          <span class="ys1000rt-vplay">▶</span>
+        </div>
+        <div class="ys1000rt-vcard-body">
+          <h3>矢状面里的身体：前倾角度如何改变受力方向</h3>
+          <p>用同一动作在不同前倾角下的受力对比，理解躯干角度对腰椎负荷的影响。</p>
+          <div class="ys1000rt-vmeta"><span class="ys1000rt-ava a1">林</span><span>林述白</span><span>· 3.2万</span></div>
+          <div class="ys1000rt-vactions">
+            <button data-ys1000rt-like>♡ 8642</button>
+            <button data-ys1000rt-fav>☆ 收藏</button>
+            <button data-ys1000rt-comment>💬 214</button>
+          </div>
+        </div>
+      </article>
+      <article class="ys1000rt-vcard" data-ys1000rt-cat="训练">
+        <div class="ys1000rt-vcard-cover">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%231a2136'/%3E%3Cg fill='none' stroke-linecap='round'%3E%3Cpath d='M90 200 q60 -120 120 -60 q60 60 120 -40' stroke='%23fbbf24' stroke-width='5'/%3E%3Cpath d='M90 220 q60 -90 120 -50 q60 40 120 -20' stroke='%23f472b6' stroke-width='3' stroke-dasharray='6 6'/%3E%3C/g%3E%3Ccircle cx='210' cy='140' r='7' fill='%2338bdf8'/%3E%3Ctext x='56' y='248' fill='%236f83a6' font-size='12' font-family='sans-serif'%3ELOAD CURVE%3C/text%3E%3C/svg%3E" alt="训练负荷曲线短片封面，黄色与品红色波形线">
+          <span class="ys1000rt-vtag">动作训练</span>
+          <span class="ys1000rt-vdur">14:19</span>
+          <span class="ys1000rt-vplay">▶</span>
+        </div>
+        <div class="ys1000rt-vcard-body">
+          <h3>训练量怎么排：一周负荷曲线的三种写法</h3>
+          <p>从周总量、强度分布与恢复窗口三个维度，给出可执行的进阶方案。</p>
+          <div class="ys1000rt-vmeta"><span class="ys1000rt-ava a2">程</span><span>程一舟</span><span>· 2.7万</span></div>
+          <div class="ys1000rt-vactions">
+            <button data-ys1000rt-like>♡ 7215</button>
+            <button data-ys1000rt-fav>☆ 收藏</button>
+            <button data-ys1000rt-comment>💬 178</button>
+          </div>
+        </div>
+      </article>
+      <article class="ys1000rt-vcard" data-ys1000rt-cat="康复">
+        <div class="ys1000rt-vcard-cover">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%2313202c'/%3E%3Cg fill='none' stroke-linecap='round'%3E%3Cpath d='M140 210 q40 -140 100 -80 q60 60 100 -30' stroke='%2334d399' stroke-width='5'/%3E%3Cpath d='M140 230 q40 -110 100 -60 q60 50 100 -10' stroke='%2338bdf8' stroke-width='3'/%3E%3C/g%3E%3Cg fill='%2334d399'%3E%3Ccircle cx='140' cy='210' r='6'/%3E%3Ccircle cx='240' cy='130' r='6'/%3E%3Ccircle cx='340' cy='100' r='6'/%3E%3C/g%3E%3Ctext x='56' y='248' fill='%236f83a6' font-size='12' font-family='sans-serif'%3ERECOVERY PATH%3C/text%3E%3C/svg%3E" alt="康复路径短片封面，绿色与青色恢复曲线">
+          <span class="ys1000rt-vtag">康复修复</span>
+          <span class="ys1000rt-vdur">16:38</span>
+          <span class="ys1000rt-vplay">▶</span>
+        </div>
+        <div class="ys1000rt-vcard-body">
+          <h3>从疼痛到回归：一位跑者的十二周修复记录</h3>
+          <p>真实跟拍记录膝盖不适的评估、阶段训练与回归赛道的完整过程。</p>
+          <div class="ys1000rt-vmeta"><span class="ys1000rt-ava a5">顾</span><span>顾也随之</span><span>· 4.1万</span></div>
+          <div class="ys1000rt-vactions">
+            <button data-ys1000rt-like>♡ 1.4万</button>
+            <button data-ys1000rt-fav>☆ 收藏</button>
+            <button data-ys1000rt-comment>💬 502</button>
+          </div>
+        </div>
+      </article>
+      <article class="ys1000rt-vcard" data-ys1000rt-cat="故事">
+        <div class="ys1000rt-vcard-cover">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23241a30'/%3E%3Ccircle cx='240' cy='120' r='56' fill='none' stroke='%238b7cff' stroke-width='2'/%3E%3Ccircle cx='240' cy='120' r='36' fill='none' stroke='%23f472b6' stroke-width='2' opacity='.8'/%3E%3Cpath d='M240 64 q22 56 0 112 q-22 -56 0 -112' fill='none' stroke='%23f9a8d4' stroke-width='2'/%3E%3Cpath d='M184 120 q56 -22 112 0 q-56 22 -112 0' fill='none' stroke='%2338bdf8' stroke-width='2'/%3E%3Ctext x='56' y='248' fill='%236f83a6' font-size='12' font-family='sans-serif'%3EA BODY STORY%3C/text%3E%3C/svg%3E" alt="人物故事短片封面，粉紫同心圆与蓝色椭圆轨迹">
+          <span class="ys1000rt-vtag">人物故事</span>
+          <span class="ys1000rt-vdur">21:07</span>
+          <span class="ys1000rt-vplay">▶</span>
+        </div>
+        <div class="ys1000rt-vcard-body">
+          <h3>四十岁重新学走路：一位舞蹈老师的身体自述</h3>
+          <p>关于代偿、疼痛与重新建立身体感知的访谈，镜头中有大量练习现场。</p>
+          <div class="ys1000rt-vmeta"><span class="ys1000rt-ava a6">许</span><span>许行知</span><span>· 3.8万</span></div>
+          <div class="ys1000rt-vactions">
+            <button data-ys1000rt-like>♡ 1.1万</button>
+            <button data-ys1000rt-fav>☆ 收藏</button>
+            <button data-ys1000rt-comment>💬 431</button>
+          </div>
+        </div>
+      </article>
+      <article class="ys1000rt-vcard" data-ys1000rt-cat="结构">
+        <div class="ys1000rt-vcard-cover">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%230e1a2c'/%3E%3Cg stroke='%23fbbf24' stroke-width='3' fill='none'%3E%3Cpath d='M180 70 q60 40 0 130'/%3E%3Cpath d='M300 70 q-60 40 0 130'/%3E%3C/g%3E%3Cg stroke='%2338bdf8' stroke-width='2' fill='none' opacity='.6'%3E%3Cpath d='M120 70 v130 M360 70 v130'/%3E%3C/g%3E%3Ccircle cx='240' cy='135' r='10' fill='%23a3e635'/%3E%3Ctext x='56' y='248' fill='%236f83a6' font-size='12' font-family='sans-serif'%3EMUSCLE PAIR%3C/text%3E%3C/svg%3E" alt="拮抗肌对短片封面，黄色对称曲线与蓝色参考线">
+          <span class="ys1000rt-vtag">结构解析</span>
+          <span class="ys1000rt-vdur">10:26</span>
+          <span class="ys1000rt-vplay">▶</span>
+        </div>
+        <div class="ys1000rt-vcard-body">
+          <h3>拮抗肌对：为什么力量训练要先讲平衡</h3>
+          <p>从股四头肌与腘绳肌的相互关系出发，说明平衡训练在长期进阶中的作用。</p>
+          <div class="ys1000rt-vmeta"><span class="ys1000rt-ava a1">林</span><span>林述白</span><span>· 2.2万</span></div>
+          <div class="ys1000rt-vactions">
+            <button data-ys1000rt-like>♡ 6430</button>
+            <button data-ys1000rt-fav>☆ 收藏</button>
+            <button data-ys1000rt-comment>💬 156</button>
+          </div>
+        </div>
+      </article>
+      <article class="ys1000rt-vcard" data-ys1000rt-cat="训练">
+        <div class="ys1000rt-vcard-cover">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%231b1f2e'/%3E%3Cg stroke='%23a3e635' stroke-width='4' stroke-linecap='round'%3E%3Cpath d='M150 210 V100 M150 100 l-40 40 M150 100 l40 40'/%3E%3Cpath d='M330 60 V170 M330 170 l-40 -40 M330 170 l40 -40'/%3E%3C/g%3E%3Cpath d='M150 135 H330' stroke='%2338bdf8' stroke-width='2' stroke-dasharray='8 6'/%3E%3Ctext x='56' y='248' fill='%236f83a6' font-size='12' font-family='sans-serif'%3ERANGE OF MOTION%3C/text%3E%3C/svg%3E" alt="关节活动度短片封面，绿色方向箭头与蓝色虚线轴">
+          <span class="ys1000rt-vtag">动作训练</span>
+          <span class="ys1000rt-vdur">08:51</span>
+          <span class="ys1000rt-vplay">▶</span>
+        </div>
+        <div class="ys1000rt-vcard-body">
+          <h3>活动度不是拉伸：四周提升踝关节背屈的实操记录</h3>
+          <p>以自测为起点，展示关节松动、负荷控制与日常动作调整的组合策略。</p>
+          <div class="ys1000rt-vmeta"><span class="ys1000rt-ava a2">程</span><span>程一舟</span><span>· 1.9万</span></div>
+          <div class="ys1000rt-vactions">
+            <button data-ys1000rt-like>♡ 5312</button>
+            <button data-ys1000rt-fav>☆ 收藏</button>
+            <button data-ys1000rt-comment>💬 132</button>
+          </div>
+        </div>
+      </article>
+      <article class="ys1000rt-vcard" data-ys1000rt-cat="康复">
+        <div class="ys1000rt-vcard-cover">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23152025'/%3E%3Cg fill='none' stroke='%2322d3ee' stroke-width='2' opacity='.7'%3E%3Cpath d='M100 210 q70 -60 140 -20 q70 40 140 -30'/%3E%3Cpath d='M100 230 q70 -40 140 -10 q70 30 140 -15'/%3E%3C/g%3E%3Cg fill='%23a3e635'%3E%3Ccircle cx='240' cy='190' r='5'/%3E%3Ccircle cx='310' cy='168' r='5'/%3E%3C/g%3E%3Ctext x='56' y='248' fill='%236f83a6' font-size='12' font-family='sans-serif'%3ENERVE GLIDE%3C/text%3E%3C/svg%3E" alt="神经滑动练习短片封面，青色波浪线与绿色节点">
+          <span class="ys1000rt-vtag">康复修复</span>
+          <span class="ys1000rt-vdur">13:12</span>
+          <span class="ys1000rt-vplay">▶</span>
+        </div>
+        <div class="ys1000rt-vcard-body">
+          <h3>久坐后的腿部不适：神经滑动练习该怎么做</h3>
+          <p>讲解动作幅度与呼吸配合，附常见错误演示，避免用力过猛。</p>
+          <div class="ys1000rt-vmeta"><span class="ys1000rt-ava a5">顾</span><span>顾也随之</span><span>· 2.4万</span></div>
+          <div class="ys1000rt-vactions">
+            <button data-ys1000rt-like>♡ 6908</button>
+            <button data-ys1000rt-fav>☆ 收藏</button>
+            <button data-ys1000rt-comment>💬 187</button>
+          </div>
+        </div>
+      </article>
+      <article class="ys1000rt-vcard" data-ys1000rt-cat="故事">
+        <div class="ys1000rt-vcard-cover">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23121c30'/%3E%3Cg stroke='%23c084fc' stroke-width='3' fill='none'%3E%3Cpath d='M170 200 q0 -120 70 -120 q70 0 70 120'/%3E%3C/g%3E%3Cg stroke='%2338bdf8' stroke-width='2' fill='none' opacity='.7'%3E%3Cpath d='M150 200 h180'/%3E%3C/g%3E%3Cg fill='%23f472b6'%3E%3Ccircle cx='205' cy='120' r='5'/%3E%3Ccircle cx='275' cy='120' r='5'/%3E%3C/g%3E%3Ctext x='56' y='248' fill='%236f83a6' font-size='12' font-family='sans-serif'%3EBODY IN STILLNESS%3C/text%3E%3C/svg%3E" alt="静息时刻短片封面，紫色弧线与粉色双眼标记">
+          <span class="ys1000rt-vtag">人物故事</span>
+          <span class="ys1000rt-vdur">19:45</span>
+          <span class="ys1000rt-vplay">▶</span>
+        </div>
+        <div class="ys1000rt-vcard-body">
+          <h3>静息时刻：三位普通人谈他们如何与身体和解</h3>
+          <p>关于疲惫、节制与自我接纳的深度访谈，画面极简，情绪浓烈。</p>
+          <div class="ys1000rt-vmeta"><span class="ys1000rt-ava a6">许</span><span>许行知</span><span>· 3.5万</span></div>
+          <div class="ys1000rt-vactions">
+            <button data-ys1000rt-like>♡ 9862</button>
+            <button data-ys1000rt-fav>☆ 收藏</button>
+            <button data-ys1000rt-comment>💬 356</button>
+          </div>
+        </div>
+      </article>
+    </div>
+    <p class="ys1000rt-empty" id="ys1000rtEmpty">当前分类下暂无内容，试试其他主题。</p>
+  </div>
+</section>
+
+<!-- 专题 -->
+<section class="ys1000rt-sec" id="ys1000rt-topics">
+  <div class="ys1000rt-wrap">
+    <div class="ys1000rt-sec-head">
+      <h2>专题企划 <em>/ Series</em></h2>
+      <p>围绕一个主题持续更新的系列内容，形成可追踪的知识脉络。</p>
+    </div>
+    <div class="ys1000rt-topic-grid">
+      <a class="ys1000rt-topic" href="#ys1000rt-flow">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%230f1c31'/%3E%3Cg fill='none' stroke='%2338bdf8' stroke-width='2' opacity='.55'%3E%3Cpath d='M200 40 V260 M80 150 H320'/%3E%3Ccircle cx='200' cy='150' r='80'/%3E%3Ccircle cx='200' cy='150' r='50'/%3E%3C/g%3E%3Ccircle cx='200' cy='150' r='8' fill='%23a3e635'/%3E%3Ctext x='32' y='285' fill='%236f83a6' font-size='12' font-family='sans-serif'%3EBODY LAB%3C/text%3E%3C/svg%3E" alt="影像实验室专题封面，蓝色同心圆与绿色中心点">
+        <div class="ys1000rt-topic-in">
+          <span>持续更新 · 12 期</span>
+          <h3>影像实验室</h3>
+          <p>用多机位与逐帧标注，把每个动作拆开到可以复现的程度。</p>
+        </div>
+      </a>
+      <a class="ys1000rt-topic" href="#ys1000rt-flow">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23221a33'/%3E%3Cg stroke='%23c084fc' stroke-width='3' fill='none'%3E%3Cpath d='M90 210 q110 -150 220 0'/%3E%3C/g%3E%3Cg fill='%23f472b6'%3E%3Ccircle cx='150' cy='150' r='7'/%3E%3Ccircle cx='200' cy='132' r='7'/%3E%3Ccircle cx='250' cy='150' r='7'/%3E%3C/g%3E%3Ctext x='32' y='285' fill='%236f83a6' font-size='12' font-family='sans-serif'%3EMOTION ARC%3C/text%3E%3C/svg%3E" alt="身体与情绪专题封面，紫色弧线与粉色情绪节点">
+        <div class="ys1000rt-topic-in">
+          <span>持续更新 · 8 期</span>
+          <h3>身体与情绪</h3>
+          <p>呼吸、紧张与松弛之间，身体如何记录我们没说出口的情绪。</p>
+        </div>
+      </a>
+      <a class="ys1000rt-topic" href="#ys1000rt-flow">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23142026'/%3E%3Cg stroke='%2334d399' stroke-width='4' fill='none' stroke-linecap='round'%3E%3Cpath d='M60 240 q60 -140 140 -90 q80 50 140 -40'/%3E%3C/g%3E%3Cg fill='%23a3e635'%3E%3Ccircle cx='120' cy='180' r='6'/%3E%3Ccircle cx='262' cy='128' r='6'/%3E%3C/g%3E%3Ctext x='32' y='285' fill='%236f83a6' font-size='12' font-family='sans-serif'%3ERECOVERY%3C/text%3E%3C/svg%3E" alt="修复记录专题封面，绿色恢复曲线与节点">
+        <div class="ys1000rt-topic-in">
+          <span>持续更新 · 15 期</span>
+          <h3>修复记录</h3>
+          <p>跟随真实练习者，记录从不适到重新动起来的完整过程。</p>
+        </div>
+      </a>
+      <a class="ys1000rt-topic" href="#ys1000rt-flow">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%231c1a2c'/%3E%3Cg stroke='%23fbbf24' stroke-width='3' fill='none'%3E%3Cpath d='M120 240 L200 80 L280 240 Z'/%3E%3Cpath d='M160 180 H240'/%3E%3C/g%3E%3Ccircle cx='200' cy='130' r='9' fill='%2338bdf8'/%3E%3Ctext x='32' y='285' fill='%236f83a6' font-size='12' font-family='sans-serif'%3ESTRUCTURE%3C/text%3E%3C/svg%3E" alt="结构之美专题封面，黄色三角与蓝色节点">
+        <div class="ys1000rt-topic-in">
+          <span>持续更新 · 6 期</span>
+          <h3>结构之美</h3>
+          <p>从骨骼到筋膜，用视觉化的方式理解身体这座精密的建筑。</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 创作者 -->
+<section class="ys1000rt-sec" id="ys1000rt-creators">
+  <div class="ys1000rt-wrap">
+    <div class="ys1000rt-sec-head">
+      <h2>创作者矩阵 <em>/ Creators</em></h2>
+      <p>来自运动科学、康复与教学一线的创作者，构成人体ys1000rt 的内容底盘。</p>
+    </div>
+    <div class="ys1000rt-creators">
+      <article class="ys1000rt-creator">
+        <div class="ys1000rt-creator-top">
+          <span class="ys1000rt-creator-ava a1" style="background:linear-gradient(135deg,#38bdf8,#8b7cff)">林</span>
+          <div><h3>林述白</h3><span>运动解剖研究者</span></div>
+        </div>
+        <p>长期从事人体结构可视化研究，擅长把复杂的肌群关系讲成可操作的画面语言。</p>
+        <div class="ys1000rt-creator-foot"><span>作品 <b>186</b></span><span>关注 <b>21.4万</b></span></div>
+        <button class="ys1000rt-creator-btn" data-ys1000rt-profile="林述白 · 运动解剖研究者：人体ys1000rt 签约创作者，主导影像实验室结构解析系列，累计发布 186 支原创短片。">查看主页</button>
+      </article>
+      <article class="ys1000rt-creator">
+        <div class="ys1000rt-creator-top">
+          <span class="ys1000rt-creator-ava a2" style="background:linear-gradient(135deg,#a3e635,#22d3ee)">程</span>
+          <div><h3>程一舟</h3><span>力量训练教练</span></div>
+        </div>
+        <p>十年一线教学经验，专注训练计划的周期安排与动作质量的长期提升。</p>
+        <div class="ys1000rt-creator-foot"><span>作品 <b>142</b></span><span>关注 <b>17.8万</b></span></div>
+        <button class="ys1000rt-creator-btn" data-ys1000rt-profile="程一舟 · 力量训练教练：专注训练周期与动作质量，在人体ys1000rt 更新动作训练系列。">查看主页</button>
+      </article>
+      <article class="ys1000rt-creator">
+        <div class="ys1000rt-creator-top">
+          <span class="ys1000rt-creator-ava a5" style="background:linear-gradient(135deg,#34d399,#38bdf8)">顾</span>
+          <div><h3>顾也随之</h3><span>康复训练师</span></div>
+        </div>
+        <p>关注疼痛管理与功能恢复，坚持记录真实的修复过程，而非结果导向的展示。</p>
+        <div class="ys1000rt-creator-foot"><span>作品 <b>98</b></span><span>关注 <b>13.6万</b></span></div>
+        <button class="ys1000rt-creator-btn" data-ys1000rt-profile="顾也随之 · 康复训练师：人体ys1000rt 康复修复系列主理人，擅长以跟拍方式呈现真实恢复路径。">查看主页</button>
+      </article>
+      <article class="ys1000rt-creator">
+        <div class="ys1000rt-creator-top">
+          <span class="ys1000rt-creator-ava a6" style="background:linear-gradient(135deg,#c084fc,#f472b6)">许</span>
+          <div><h3>许行知</h3><span>影像创作者</span></div>
+        </div>
+        <p>以纪录片语言记录身体故事，关注普通人在日常中的微小改变与自我接纳。</p>
+        <div class="ys1000rt-creator-foot"><span>作品 <b>76</b></span><span>关注 <b>22.1万</b></span></div>
+        <button class="ys1000rt-creator-btn" data-ys1000rt-profile="许行知 · 影像创作者：人体ys1000rt 人物故事系列主创，作品以静息与情绪为主题。">查看主页</button>
+      </article>
+      <article class="ys1000rt-creator">
+        <div class="ys1000rt-creator-top">
+          <span class="ys1000rt-creator-ava a4" style="background:linear-gradient(135deg,#fbbf24,#f97316)">闻</span>
+          <div><h3>闻舒</h3><span>体能训练讲师</span></div>
+        </div>
+        <p>擅长把枯燥的测试数据转换成可视化图表，让体能变化一眼可见。</p>
+        <div class="ys1000rt-creator-foot"><span>作品 <b>63</b></span><span>关注 <b>9.7万</b></span></div>
+        <button class="ys1000rt-creator-btn" data-ys1000rt-profile="闻舒 · 体能训练讲师：人体ys1000rt 数据可视化内容作者，专注体能与负荷。">查看主页</button>
+      </article>
+      <article class="ys1000rt-creator">
+        <div class="ys1000rt-creator-top">
+          <span class="ys1000rt-creator-ava a3" style="background:linear-gradient(135deg,#f9a8d4,#8b7cff)">苏</span>
+          <div><h3>苏挽星</h3><span>瑜伽与呼吸导师</span></div>
+        </div>
+        <p>研究呼吸节律与身体放松的关系，作品节奏缓慢，适合在夜间观看。</p>
+        <div class="ys1000rt-creator-foot"><span>作品 <b>54</b></span><span>关注 <b>11.2万</b></span></div>
+        <button class="ys1000rt-creator-btn" data-ys1000rt-profile="苏挽星 · 瑜伽与呼吸导师：人体ys1000rt 呼吸与放松内容作者，作品以治愈影像为主。">查看主页</button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 随笔 -->
+<section class="ys1000rt-sec" id="ys1000rt-stories">
+  <div class="ys1000rt-wrap">
+    <div class="ys1000rt-sec-head">
+      <h2>影像随笔 <em>/ Notes</em></h2>
+      <p>镜头之外的文字，记录拍摄现场的细节与创作者的思考。</p>
+    </div>
+    <div class="ys1000rt-stories">
+      <article class="ys1000rt-story">
+        <h3>拍一支动作短片的第 37 次尝试</h3>
+        <p>同一个深蹲镜头，我们反复拍了三十多次。不是动作做不到位，而是想把踝关节背屈的那一点点角度变化拍清楚，需要恰好侧前方的机位，恰好不反光的地面，还要恰好有一束斜光落在脚背上。</p>
+        <span>文 / 林述白 · 2026-11-10</span>
+      </article>
+      <article class="ys1000rt-story">
+        <h3>在康复室里，我学会了等待</h3>
+        <p>跟拍顾老师的十二周记录时，我一度想剪掉那些没有进展的日子。后来发现正是这些日子构成了真实的修复过程：反复的评估、调整、再尝试。身体不会因为一次努力就改变，它更像是在慢慢商量。</p>
+        <span>文 / 许行知 · 2026-11-06</span>
+      </article>
+      <article class="ys1000rt-story">
+        <h3>关于"专业"这件事的一点自我怀疑</h3>
+        <p>每当我们标注一个角度参数，都会有一瞬间的犹豫：这个数字对普通观众是否有意义？最后的结论是，专业不是把门槛抬高，而是把话说清楚之后的坦诚。人体ys1000rt 愿意做那个愿意解释的人。</p>
+        <span>文 / 编辑部 · 2026-11-02</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 评价 -->
+<section class="ys1000rt-sec" id="ys1000rt-comments">
+  <div class="ys1000rt-wrap">
+    <div class="ys1000rt-sec-head">
+      <h2>用户评价 <em>/ Voices</em></h2>
+      <p>来自教练、康复师与普通练习者的真实反馈。</p>
+      <button class="ys1000rt-sec-more" data-ys1000rt-share>分享本页</button>
+    </div>
+    <div class="ys1000rt-comments">
+      <div class="ys1000rt-comment">
+        <div class="ys1000rt-comment-top"><span class="ys1000rt-ava a1">陈</span><b>陈教练</b><span>体能教练</span></div>
+        <p>把髋和膝的相对关系拆到这个程度的内容真的不多。我直接拿这期给学员看，省了我半节课的讲解时间。</p>
+      </div>
+      <div class="ys1000rt-comment">
+        <div class="ys1000rt-comment-top"><span class="ys1000rt-ava a5">周</span><b>周女士</b><span>普通用户</span></div>
+        <p>本来是随便点进来的，结果把修复记录那期看完了。没有夸张的情绪，就是很真实的记录，看完挺受鼓励的。</p>
+      </div>
+      <div class="ys1000rt-comment">
+        <div class="ys1000rt-comment-top"><span class="ys1000rt-ava a2">何</span><b>何以安</b><span>康复方向学生</span></div>
+        <p>画面干净，标注清楚，参数写得也很克制。对还在学习阶段的人来说，这种表达是非常友善的。</p>
+      </div>
+      <div class="ys1000rt-comment">
+        <div class="ys1000rt-comment-top"><span class="ys1000rt-ava a4">李</span><b>老李跑步</b><span>跑者</span></div>
+        <p>足弓那期对我的启发最大，原来一直以为是姿势问题，其实是缓冲策略的问题。已经按视频里的方法调整了两周。</p>
+      </div>
+      <div class="ys1000rt-comment">
+        <div class="ys1000rt-comment-top"><span class="ys1000rt-ava a6">杨</span><b>杨小满</b><span>瑜伽老师</span></div>
+        <p>呼吸重建那期节奏很好，适合睡前看。希望以后多一些这样安静的、不带强目标感的内容。</p>
+      </div>
+      <div class="ys1000rt-comment">
+        <div class="ys1000rt-comment-top"><span class="ys1000rt-ava a3">苏</span><b>苏打水</b><span>普通用户</span></div>
+        <p>最喜欢的是这个平台不催你练。看完知道自己身体是怎么回事，就已经很有收获了。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 动态 + FAQ -->
+<section class="ys1000rt-sec" id="ys1000rt-news">
+  <div class="ys1000rt-wrap">
+    <div class="ys1000rt-sec-head">
+      <h2>企业动态与帮助 <em>/ Updates</em></h2>
+      <p>人体ys1000rt 官方发布与常见问题，便于创作者与合作伙伴了解平台。</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px" class="ys1000rt-two-col">
+      <div class="ys1000rt-log">
+        <div class="ys1000rt-log-item">
+          <span>2026-11-15 · 官方发布</span>
+          <h3>影像实验室第 12 期上线</h3>
+          <p>新增《静息与发力》系列 6 支短片，覆盖髋、膝、踝三个关键关节的联动解析。</p>
+        </div>
+        <div class="ys1000rt-log-item">
+          <span>2026-11-08 · 品牌动态</span>
+          <h3>人体ys1000rt 与三家康复机构达成内容合作</h3>
+          <p>共同推进真实修复案例的影像记录，为内容生态补充一线实践资料。</p>
+        </div>
+        <div class="ys1000rt-log-item">
+          <span>2026-10-28 · 社区活动</span>
+          <h3>「我的身体日志」投稿挑战开启报名</h3>
+          <p>面向所有用户征集三十天身体记录，优秀作品将在官方网站首页推荐。</p>
+        </div>
+        <div class="ys1000rt-log-item">
+          <span>2026-10-12 · 平台更新</span>
+          <h3>视频播放页增加动作要点时间轴</h3>
+          <p>用户可直接跳转至关键帧，查看角度、节奏与呼吸配合的细节说明。</p>
+        </div>
+      </div>
+      <div class="ys1000rt-faq">
+        <details open>
+          <summary>人体ys1000rt 的内容适合谁看？</summary>
+          <p>平台内容面向教练、康复从业者、运动爱好者以及希望了解自身体态的普通用户，不同系列均标注了适合人群与观看建议。</p>
+        </details>
+        <details>
+          <summary>平台内容与专业医疗建议的关系？</summary>
+          <p>人体ys1000rt 的影像内容以知识科普与动作展示为主，不构成诊断或治疗方案，遇到身体不适请咨询专业人士。</p>
+        </details>
+        <details>
+          <summary>我可以向官网投稿吗？</summary>
+          <p>可以。通过页面底部的投稿入口提交作品简介与样片链接，编辑团队会在五个工作日内回复，通过后进入排期。</p>
+        </details>
+        <details>
+          <summary>如何保证影像的授权合规？</summary>
+          <p>所有出镜者均签署影像授权文件，配乐与字体均来自正版授权渠道，制作流程有完整存档可供核查。</p>
+        </details>
+        <details>
+          <summary>是否提供商用授权？</summary>
+          <p>机构用户可通过官方联系渠道申请内容使用授权，平台会根据用途提供对应的授权方案与说明文件。</p>
+        </details>
+        <details>
+          <summary>平台多久更新一次内容？</summary>
+          <p>焦点影像每周更新，内容流保持每两至三天新增一条原创短片，专题企划按季推进。</p>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 联系 -->
+<section class="ys1000rt-sec" id="ys1000rt-contact">
+  <div class="ys1000rt-wrap">
+    <div class="ys1000rt-contact">
+      <div>
+        <h2>加入人体ys1000rt 的内容生态</h2>
+        <p>无论你是想投稿一支短片、申请机构合作，还是希望了解平台的制作标准，都可以通过以下方式与我们取得联系。</p>
+        <div class="ys1000rt-contact-info">
+          <span><b>品牌合作</b> · brand@ys1000rt-body.cn</span>
+          <span><b>投稿咨询</b> · creator@ys1000rt-body.cn</span>
+          <span><b>媒体联络</b> · press@ys1000rt-body.cn</span>
+          <span><b>工作时间</b> · 周一至周五 10:00–18:00</span>
+        </div>
+      </div>
+      <form class="ys1000rt-contact-form" id="ys1000rtForm">
+        <input type="text" placeholder="您的称呼" aria-label="称呼" required>
+        <input type="email" placeholder="联系邮箱" aria-label="邮箱" required>
+        <textarea rows="4" placeholder="简要说明合作或投稿意向" aria-label="留言内容"></textarea>
+        <button type="submit" class="ys1000rt-btn ys1000rt-btn-main" style="justify-content:center">提交意向</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="ys1000rt-footer">
+  <div class="ys1000rt-wrap">
+    <div class="ys1000rt-footer-grid">
+      <div class="ys1000rt-footer-brand">
+        <a class="ys1000rt-logo" href="#ys1000rt-hero">
+          <span class="ys1000rt-logo-mark"></span>
+          <span>人体ys1000rt<small>BODY · MOTION</small></span>
+        </a>
+        <p>人体ys1000rt 官方网站 · 专注人体结构与运动表现的原创影像品牌，持续运营高品质内容生态，为用户提供专业、高清、值得信赖的身体影像记录。</p>
+      </div>
+      <div>
+        <h4>内容</h4>
+        <ul>
+          <li><a href="#ys1000rt-focus">焦点影像</a></li>
+          <li><a href="#ys1000rt-flow">内容流</a></li>
+          <li><a href="#ys1000rt-topics">专题企划</a></li>
+          <li><a href="#ys1000rt-stories">影像随笔</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于</h4>
+        <ul>
+          <li><a href="#ys1000rt-about">品牌故事</a></li>
+          <li><a href="#ys1000rt-creators">创作者矩阵</a></li>
+          <li><a href="#ys1000rt-news">企业动态</a></li>
+          <li><a href="#ys1000rt-faq">帮助中心</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>参与</h4>
+        <ul>
+          <li><a href="#ys1000rt-contact">合作联系</a></li>
+          <li><a href="#ys1000rt-flow">作品投稿</a></li>
+          <li><a href="#ys1000rt-comments">用户反馈</a></li>
+          <li><a href="#ys1000rt-about">制作标准</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ys1000rt-footer-bottom">
+      <span>© 2026 人体ys1000rt 品牌官方网站 · 版权所有 · 持续运营中</span>
+      <span>内容均为原创 · 高清制作 · 正版授权</span>
+    </div>
+  </div>
+</footer>
+
+<!-- 弹层 -->
+<div class="ys1000rt-modal" id="ys1000rtModal">
+  <div class="ys1000rt-modal-box">
+    <button class="ys1000rt-modal-close" id="ys1000rtModalClose" aria-label="关闭">✕</button>
+    <h3 id="ys1000rtModalTitle">提示</h3>
+    <p id="ys1000rtModalText"></p>
+    <button class="ys1000rt-btn ys1000rt-btn-main" id="ys1000rtModalOk" style="justify-content:center">知道了</button>
+  </div>
+</div>
+
+<div class="ys1000rt-toast" id="ys1000rtToast">已复制</div>
+<button class="ys1000rt-top" id="ys1000rtTop" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  "use strict";
+  var $=function(s,c){return (c||document).querySelector(s);};
+  var $$=function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s));};
+
+  /* 移动端导航 */
+  var burger=$("#ys1000rtBurger"), nav=$("#ys1000rtNav");
+  if(burger){
+    burger.addEventListener("click",function(){
+      var open=nav.classList.toggle("is-open");
+      burger.setAttribute("aria-expanded",open?"true":"false");
+      burger.textContent=open?"✕":"☰";
+    });
+    $$(".ys1000rt-nav a").forEach(function(a){
+      a.addEventListener("click",function(){
+        if(nav.classList.contains("is-open")){
+          nav.classList.remove("is-open");
+          burger.textContent="☰";
+          burger.setAttribute("aria-expanded","false");
+        }
+        $$(".ys1000rt-nav a").forEach(function(x){x.classList.remove("is-active");});
+        a.classList.add("is-active");
+      });
+    });
+  }
+
+  /* Toast */
+  var toast=$("#ys1000rtToast"), toastTimer=null;
+  function showToast(msg){
+    toast.textContent=msg;
+    toast.classList.add("is-on");
+    clearTimeout(toastTimer);
+    toastTimer=setTimeout(function(){toast.classList.remove("is-on");},2200);
+  }
+
+  /* 弹层 */
+  var modal=$("#ys1000rtModal"), mTitle=$("#ys1000rtModalTitle"), mText=$("#ys1000rtModalText");
+  function openModal(title,text){
+    mTitle.textContent=title;
+    mText.textContent=text;
+    modal.classList.add("is-open");
+  }
+  function closeModal(){
+    modal.classList.remove("is-open");
+  }
+  $("#ys1000rtModalClose").addEventListener("click",closeModal);
+  $("#ys1000rtModalOk").addEventListener("click",closeModal);
+  modal.addEventListener("click",function(e){ if(e.target===modal) closeModal(); });
+  document.addEventListener("keydown",function(e){ if(e.key==="Escape") closeModal(); });
+
+  /* 搜索 */
+  var sInput=$("#ys1000rtSearch"), sHint=$("#ys1000rtSearchHint");
+  var hints=[
+    "试试「深蹲」「肩胛骨」「呼吸」「足弓」",
+    "可搜索结构、动作、肌群或创作者名",
+    "热门：髋关节 · 筋膜 · 修复记录",
+    "输入关键词后按回车即可筛选内容流"
+  ];
+  var hintIdx=0;
+  if(sInput){
+    sInput.addEventListener("focus",function(){
+      sHint.innerHTML="<strong>搜索提示：</strong>"+hints[hintIdx];
+      hintIdx=(hintIdx+1)%hints.length;
+      sHint.classList.add("is-open");
+    });
+    sInput.addEventListener("blur",function(){
+      setTimeout(function(){sHint.classList.remove("is-open");},160);
+    });
+    sInput.addEventListener("input",function(){
+      var v=sInput.value.trim();
+      if(v.length>0){
+        sHint.innerHTML="正在查找与「<strong>"+v.replace(/[<>&]/g,"")+"</strong>」相关的内容，按回车进入内容流筛选。";
+        sHint.classList.add("is-open");
+        filterBySearch(v);
+      }else{
+        filterBySearch("");
+      }
+    });
+    sInput.addEventListener("keydown",function(e){
+      if(e.key==="Enter"){
+        e.preventDefault();
+        sHint.classList.remove("is-open");
+        var t=$("#ys1000rt-flow");
+        if(t) t.scrollIntoView({behavior:"smooth",block:"start"});
+        showToast("已按关键词筛选内容流");
+      }
+    });
+  }
+
+  /* 内容流筛选 */
+  var flow=$("#ys1000rtFlow"), empty=$("#ys1000rtEmpty");
+  var currentCat="all", currentSearch="";
+  function applyFilter(){
+    var cards=$$(".ys1000rt-vcard",flow), shown=0;
+    cards.forEach(function(card){
+      var cat=card.getAttribute("data-ys1000rt-cat")||"";
+      var txt=card.textContent||"";
+      var okCat=(currentCat==="all"||cat===currentCat);
+      var okSearch=(currentSearch===""||txt.indexOf(currentSearch)>-1);
+      if(okCat&&okSearch){card.classList.remove("is-hide");shown++;}
+      else{card.classList.add("is-hide");}
+    });
+    if(empty) empty.classList.toggle("is-on",shown===0);
+  }
+  function filterBySearch(v){
+    currentSearch=v;
+    applyFilter();
+  }
+  $$("#ys1000rtFilter .ys1000rt-chip").forEach(function(chip){
+    chip.addEventListener("click",function(){
+      $$("#ys1000rtFilter .ys1000rt-chip").forEach(function(c){c.classList.remove("is-on");});
+      chip.classList.add("is-on");
+      currentCat=chip.getAttribute("data-ys1000rt-cat");
+      applyFilter();
+    });
+  });
+
+  /* 点赞 / 收藏 */
+  $$("[data-ys1000rt-like]").forEach(function(btn){
+    btn.addEventListener("click",function(e){
+      e.stopPropagation();
+      var like=!btn.classList.contains("is-like");
+      btn.classList.toggle("is-like",like);
+      var m=btn.textContent.match(/[\d.]+/);
+      var raw=btn.getAttribute("data-raw")||(m?m[0]:"0");
+      btn.setAttribute("data-raw",raw);
+      var num=parseFloat(raw);
+      if(isNaN(num)) num=0;
+      var next=like?num+1:Math.max(0,num-1);
+      btn.textContent=(like?"♥ ":"♡ ")+next;
+      showToast(like?"已点过赞":"已取消点赞");
+    });
+  });
+  $$("[data-ys1000rt-fav]").forEach(function(btn){
+    btn.addEventListener("click",function(e){
+      e.stopPropagation();
+      var on=btn.classList.toggle("is-fav");
+      btn.textContent=on?"★ 已收藏":"☆ 收藏";
+      showToast(on?"已加入收藏":"已取消收藏");
+    });
+  });
+  $$("[data-ys1000rt-comment]").forEach(function(btn){
+    btn.addEventListener("click",function(e){
+      e.stopPropagation();
+      openModal("评论区","该短片的讨论区正在整理中，你可先通过底部联系入口提交具体问题，编辑团队会整理成专题回应。");
+    });
+  });
+
+  /* 分享 / 复制 */
+  function copyText(text){
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(function(){showToast("链接已复制");},function(){showToast("复制失败，请手动复制");});
+    }else{
+      showToast("当前环境暂不支持自动复制");
+    }
+  }
+  $$("[data-ys1000rt-share]").forEach(function(btn){
+    btn.addEventListener("click",function(e){
+      e.stopPropagation();
+      openModal("分享人体ys1000rt","将本页推荐给同事或朋友：可在浏览器地址栏分享当前页面，或使用下方按钮复制站点名称。");
+      var ok=$("#ys1000rtModalOk");
+      var clone=ok.cloneNode(true);
+      clone.textContent="复制站点名称";
+      ok.parentNode.replaceChild(clone,ok);
+      clone.addEventListener("click",function(){
+        copyText("人体ys1000rt 官方网站 - 专注人体结构与运动表现的原创影像社区");
+        closeModal();
+      });
+    });
+  });
+
+  /* 卡片点击 */
+  $$("[data-ys1000rt-openvideo]").forEach(function(card){
+    card.addEventListener("click",function(){
+      var name=card.getAttribute("data-ys1000rt-openvideo");
+      openModal("影像详情","《"+name+"》属于人体ys1000rt 平台原创内容，完整短片与动作要点时间轴可在内容流中查看。");
+    });
+  });
+
+  /* 创作者档案 */
+  $$("[data-ys1000rt-profile]").forEach(function(btn){
+    btn.addEventListener("click",function(){
+      openModal("创作者档案",btn.getAttribute("data-ys1000rt-profile"));
+    });
+  });
+
+  /* 投稿入口 */
+  $$("[data-ys1000rt-submit]").forEach(function(btn){
+    btn.addEventListener("click",function(){
+      openModal("投稿入口","欢迎向人体ys1000rt 投稿。请准备作品简介、样片与拍摄参数说明，通过底部联系邮箱提交，编辑团队将在五个工作日内回复。");
+    });
+  });
+
+  /* 表单 */
+  var form=$("#ys1000rtForm");
+  if(form){
+    form.addEventListener("submit",function(e){
+      e.preventDefault();
+      showToast("意向已记录，我们会尽快联系你");
+      form.reset();
+    });
+  }
+
+  /* 数字滚动 */
+  var stats=$$("[data-count]");
+  var done=false;
+  function countUp(){
+    if(done) return;
+    done=true;
+    stats.forEach(function(el){
+      var target=parseInt(el.getAttribute("data-count"),10)||0;
+      var cur=0, step=Math.max(1,Math.round(target/40));
+      var timer=setInterval(function(){
+        cur+=step;
+        if(cur>=target){cur=target;clearInterval(timer);}
+        el.textContent=cur;
+      },28);
+    });
+  }
+  if("IntersectionObserver" in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting) countUp(); });
+    },{threshold:.4});
+    stats.forEach(function(el){io.observe(el);});
+  }else{
+    countUp();
+  }
+
+  /* 回到顶部 */
+  var topBtn=$("#ys1000rtTop");
+  window.addEventListener("scroll",function(){
+    topBtn.classList.toggle("is-on",window.scrollY>420);
+  });
+  topBtn.addEventListener("click",function(){
+    window.scrollTo({top:0,behavior:"smooth"});
+  });
+
+  /* 响应式两列修正 */
+  function fixTwoCol(){
+    var el=$(".ys1000rt-two-col");
+    if(!el) return;
+    if(window.innerWidth<820){el.style.gridTemplateColumns="1fr";}
+    else{el.style.gridTemplateColumns="1fr 1fr";}
+  }
+  fixTwoCol();
+  window.addEventListener("resize",fixTwoCol);
+})();
+</script>
+</body>
+  </html>
